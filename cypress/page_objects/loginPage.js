@@ -4,11 +4,11 @@ class LoginPage {
 
 
     get emailInput() {
-        return cy.get('#marko.ranisavljev91@gmail.com');
+        return cy.get('#cypress@test.com');
     }
 
     get passwordInput() {
-        return cy.get('#miholjdan')
+        return cy.get('#Test1234')
     }
 
     get loginButton() {
@@ -16,8 +16,8 @@ class LoginPage {
     }
 
     login(email, password) {
-        this.emailInput.type('marko.ranisavljev91@gmail.com')
-        this.passwordInput.type('miholjdan')
+        this.emailInput.type('cypress@test.com')
+        this.passwordInput.type('Test1234')
         this.loginButton.click()
     }
 

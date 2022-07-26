@@ -4,8 +4,8 @@ import { loginPage } from '../page_objects/loginPage';
 
 
 describe('login test', () => {
-  const validEmail = 'marko.ranisavljev91@gmail.com';
-  const validPassword = 'miholjdan';
+  const validEmail = 'cypress@test.com';
+  const validPassword = 'Test1234';
 
   it('login with valid credentials', () => {
     cy.visit('https://cypress.vivifyscrum-stage.com/');
